@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVA AI Chatbot</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🤖 AVA</h2>
+        <p>AI Assistant</p>
+    </div>
+
+    <!-- Main Chat -->
+    <div class="main">
+
+        <!-- Header -->
+        <div class="header">
+            AVA AI Chatbot
+        </div>
+
+        <!-- Chat Box -->
+        <div id="chatBox" class="chat-box">
+            <div class="bot-message">
+                Hello 👋 I am AVA. Ask me anything!
+            </div>
+        </div>
+
+        <!-- Input -->
+        <div class="input-area">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Type your message..." 
+                onkeypress="handleKey(event)"
+            >
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Made by Ashish Dubey 🚀
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
